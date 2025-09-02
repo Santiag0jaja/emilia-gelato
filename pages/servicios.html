@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo y Servicios | Emilia Gelato</title>
+  <meta name="description" content="Catálogo de sabores y servicios: domicilios, catering y heladería móvil. Pide por WhatsApp." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../favicon.ico">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Emilia Gelato</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="servicios.html">Catálogo y Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" class="container my-5">
+    <!-- Filtros simples -->
+    <section class="mb-4">
+      <div class="d-flex flex-wrap gap-2 align-items-center">
+        <h1 class="h3 mb-0">Catálogo</h1>
+        <div class="ms-auto">
+          <label for="filtro" class="visually-hidden">Filtrar por disponibilidad</label>
+          <select id="filtro" class="form-select form-select-sm">
+            <option value="todos">Todos</option>
+            <option value="disponible">Disponibles</option>
+            <option value="agotado">Agotados</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards de productos -->
+    <section class="mb-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4" id="grid-productos">
+        <!-- Producto -->
+        <div class="col" data-stock="disponible">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/mandarina.jpeg" class="card-img-top" alt="Helado de mandarina" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">Mandarina</h3>
+              <p class="card-text small text-muted mb-2"> + 70% cacao. Porción 120 ml.</p>
+              <span class="badge text-bg-success">Disponible</span>
+            </div>
+            <div class="card-footer bg-white">
+              <span class="fw-bold">$5.000</span>
+              <a class="btn btn-sm btn-outline-dark float-end"
+                 target="_blank" rel="noopener"
+                 href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20Chocolate.">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-stock="disponible">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/redvelvet.jpeg" class="card-img-top" alt="Helado de red velvet" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">Red Velvet</h3>
+              <p class="card-text small text-muted mb-2">Gelato de red velvet, delicioso.</p>
+              <span class="badge text-bg-success">Disponible</span>
+            </div>
+            <div class="card-footer bg-white">
+              <span class="fw-bold">$5.000</span>
+              <a class="btn btn-sm btn-outline-dark float-end"
+                 target="_blank" rel="noopener"
+                 href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20Fresa.">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-stock="agotado">
+          <div class="card h-100 shadow-sm">
+            <img src="../img/limon.jpeg" class="card-img-top" alt="Helado limon" loading="lazy">
+            <div class="card-body">
+              <h3 class="h5 card-title">Limon</h3>
+              <p class="card-text small text-muted mb-2">Clásico con limon natural.</p>
+              <span class="badge text-bg-secondary">Agotado</span>
+            </div>
+            <div class="card-footer bg-white">
+              <span class="fw-bold">$4.500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="mb-5">
+      <h2 class="h4">Servicios</h2>
+      <ol class="list-group list-group-numbered shadow-sm">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Domicilios en zona urbana
+          <a class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener"
+             href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20domicilio.">
+            <i class="bi bi-whatsapp"></i> Solicitar
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Catering para eventos
+          <a class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener"
+             href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20catering.">
+            <i class="bi bi-whatsapp"></i> Cotizar
+          </a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Heladería móvil
+          <a class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener"
+             href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20helader%C3%ADa%20m%C3%B3vil.">
+            <i class="bi bi-whatsapp"></i> Reservar
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Tabla accesible (resumen) -->
+    <section>
+      <h2 class="h4">Resumen de sabores</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle shadow-sm">
+          <caption class="small text-muted">Lista de sabores con precio y disponibilidad.</caption>
+          <thead class="table-warning">
+            <tr><th scope="col">Sabor</th><th scope="col">Precio</th><th scope="col">Disponibilidad</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Mandarina</td><td>$5.000</td><td>Disponible</td></tr>
+            <tr><td>Red Velvet</td><td>$5.000</td><td>Disponible</td></tr>
+            <tr><td>Limon</td><td>$4.500</td><td>Agotado</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-warning text-white text-center py-3 mt-5">
+    © 2025 Emilia Gelato · Medellín, Colombia
+  </footer>
+
+  <a class="floating-whatsapp" aria-label="Abrir WhatsApp para pedidos"
+     href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20necesito%20informaci%C3%B3n."
+     target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

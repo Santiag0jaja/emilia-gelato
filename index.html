@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emilia Gelato | Helados Artesanales en Medellín</title>
+  <meta name="description" content="Heladería artesanal en Medellín: sabores clásicos y de temporada, postres fríos y malteadas. Catálogo actualizado y pedidos por WhatsApp." />
+  <meta name="author" content="Santiago Diaz" />
+  <link rel="canonical" href="https://tusitio-ejemplo.com/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Emilia Gelato | Helados Artesanales" />
+  <meta property="og:description" content="Catálogo de sabores, horarios y contacto. ¡Pide por WhatsApp!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/helado-chocolate.jpg" />
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm" aria-label="Menú principal">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Emilia Gelato</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Catálogo y Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold">La experiencia más dulce desde 1995</h1>
+            <p class="lead mb-4">Helados artesanales con ingredientes de calidad, sabores clásicos y de temporada.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-warning btn-lg" href="pages/servicios.html">Ver catálogo</a>
+              <a class="btn btn-outline-dark btn-lg" target="_blank" rel="noopener" href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20hacer%20un%20pedido.">
+                <i class="bi bi-whatsapp"></i> Pedir por WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card border-0 shadow hero-card">
+              <img src="img/mixto.jpeg" alt="Copa de helado artesanal con toppings" class="rounded" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Galería de sabores</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <figure class="card h-100 shadow-sm">
+            <img src="img/mandarina.jpeg" class="card-img-top img-hover" alt="Helado de mandarina artesanal" loading="lazy">
+            <figcaption class="card-body small text-muted">Mandarina + 70% cacao</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="card h-100 shadow-sm">
+            <img src="img/redvelvet.jpeg" class="card-img-top img-hover" alt="Helado de red velvet natural" loading="lazy">
+            <figcaption class="card-body small text-muted">Red Velvet</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="card h-100 shadow-sm">
+            <img src="img/limon.jpeg" class="card-img-top img-hover" alt="Helado limon" loading="lazy">
+            <figcaption class="card-body small text-muted">Gelato de limon</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section class="bg-light py-5 border-top border-bottom">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="h3">Sobre nosotros</h2>
+            <p>Somos una heladería artesanal en Medellín con recetas familiares. Elaboramos lotes pequeños para asegurar frescura y sabor auténtico.</p>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-geo-alt"></i> Cra. 00 #00-00, Medellín, Colombia</li>
+              <li><i class="bi bi-clock"></i> Lun–Dom: 12:00–21:00</li>
+              <li><i class="bi bi-phone"></i> +57 300 111 2233</li>
+            </ul>
+          </div>
+            <div class="col-lg-6">
+                 <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
+                <video controls autoplay muted loop playsinline class="w-100 h-100">
+                 <source src="videos/promotion.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+                 </video>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <a class="floating-whatsapp" aria-label="Abrir WhatsApp para pedidos"
+     href="https://wa.me/573001112233?text=Hola%20Emilia%20Gelato%2C%20quiero%20hacer%20un%20pedido."
+     target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <footer class="bg-warning text-white text-center py-3 mt-5">
+    <address class="mb-0">© 2025 Emilia Gelato · Medellín, Colombia · Sitio web por Santiago Diaz</address>
+  </footer>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "IceCreamShop",
+    "name": "Emilia Gelato",
+    "image": "https://tusitio-ejemplo.com/img/helado-chocolate.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Medellín", "addressCountry": "CO" },
+    "telephone": "+573001112233",
+    "url": "https://tusitio-ejemplo.com/",
+    "servesCuisine": "Dessert",
+    "openingHours": "Mo-Su 12:00-21:00"
+  }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+:root{
+  --bg:#fef9f4;
+  --text:#333;
+  --brand:#ffc107; /* Bootstrap warning */
+}
+
+*{box-sizing:border-box}
+html:focus-within{scroll-behavior:smooth}
+
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--bg);
+  color: var(--text);
+  margin:0;
+}
+
+img{max-width:100%;height:auto;border-radius:.5rem}
+
+/* Accesibilidad */
+.skip-link{
+  position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus{
+  position:static; width:auto; height:auto; padding:.5rem 1rem; background:#000; color:#fff; z-index:10000;
+}
+
+/* Hero */
+.hero{
+  min-height: 60vh;
+  background:
+    radial-gradient(80% 60% at 90% 10%, rgba(255,193,7,.15), transparent 60%),
+    radial-gradient(80% 60% at 10% 90%, rgba(255,193,7,.12), transparent 60%);
+  padding: clamp(2rem, 4vw, 4rem) 0;
+}
+.hero-card img{display:block}
+
+/* Efectos */
+.img-hover{transition: transform .25s ease}
+.img-hover:hover{transform: scale(1.03)}
+
+/* Floating WhatsApp */
+.floating-whatsapp{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  z-index: 1050;
+}
+.floating-whatsapp i{font-size: 1.5rem}
+
+/* Utilidades */
+.table thead.table-warning th{color:#212529}
+footer address{color:#111}
+
+/* Form */
+.needs-validation .form-control:focus{
+  box-shadow: 0 0 0 .25rem rgba(255,193,7,.25);
+  border-color: var(--brand);
+}
